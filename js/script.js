@@ -73,16 +73,16 @@ function submitBtn() {
   } else {
     hitungIMT(tinggi, berat);
   }
+}
 
-  //reset button
-  function resetBtn() {
-    const berat = (document.getElementById("berat").value = "");
-    const tinggi = (document.getElementById("tinggi").value = "");
-    const usia = (document.getElementById("usia").value = "");
+//reset button
+function resetBtn() {
+  const berat = (document.getElementById("berat").value = "");
+  const tinggi = (document.getElementById("tinggi").value = "");
+  const usia = (document.getElementById("usia").value = "");
 
-    let radios = document.getElementsByName("gender");
-    for (var i = 0; i < radios.length; i++) {
-      radios[i].checked = false;
-    }
+  let radios = document.getElementsByName("gender");
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].checked = false;
   }
 }
