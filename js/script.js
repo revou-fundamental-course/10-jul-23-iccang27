@@ -72,6 +72,7 @@ function submitBtn() {
     alert("silahkan isi bagian yang kosong atau pilih gender kamu!");
   } else {
     hitungIMT(tinggi, berat);
+    scrollToResult();
   }
 }
 
@@ -85,4 +86,9 @@ function resetBtn() {
   for (var i = 0; i < radios.length; i++) {
     radios[i].checked = false;
   }
+}
+
+function scrollToResult() {
+  const element = document.getElementById("hasil");
+  element.scrollIntoView({ behavior: "smooth" });
 }
