@@ -102,8 +102,10 @@ p#imt{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     main {
         width: 100vh;
+        padding: 10px;
+        box-sizing: border-box;
     }
 }
